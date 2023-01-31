@@ -13,7 +13,7 @@ function Missions() {
   }, [send]);
   return (
     <div className="missions-container">
-      <div className="line-1">
+      <div className="line">
         <h3 className="mname-case">Mission</h3>
         <h3 className="mdesc-case">Description</h3>
         <h3 className="mstat-case">Status</h3>
