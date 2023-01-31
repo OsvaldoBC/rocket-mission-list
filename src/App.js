@@ -1,10 +1,19 @@
-import './App.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p> getting started</p>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Rockets />} />
+            <Route exact path="/missions" element={<Missions />} />
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
