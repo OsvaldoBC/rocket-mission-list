@@ -1,5 +1,5 @@
 import React from 'react';
-import RocketsContainer from '../Components/Rockets';
+import RocketsContainer from '../components/RocketsContainer';
 
 const Rockets = () => (
   <div>
