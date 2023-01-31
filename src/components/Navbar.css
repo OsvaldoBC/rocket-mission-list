@@ -1,8 +1,9 @@
-.inactive{
-    color: #000;
-    text-decoration: none;
+.inactive {
+  color: #000;
+  text-decoration: none;
 }
-.active{
-    text-decoration: underline;
-    color: #000;
+
+.active {
+  text-decoration: underline;
+  color: #000;
 }
