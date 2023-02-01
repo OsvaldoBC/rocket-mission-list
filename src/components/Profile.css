@@ -1,3 +1,4 @@
-.main-profile-container{
-    display: flex;
+.main-profile-container {
+  display: flex;
+  justify-content: space-evenly;
 }
