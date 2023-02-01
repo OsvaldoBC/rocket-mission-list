@@ -23,7 +23,6 @@ Rocket.propTypes = {
   description: PropTypes.node.isRequired,
 };
 
-
 const RocketsContainer = () => {
   const rockets = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
@@ -35,14 +34,14 @@ const RocketsContainer = () => {
   return (
     <>
       {rockets.map((rocket) => (
-       <Rocket
-       key={rocket.id}
-       id={rocket.id}
-       name={rocket.name}
-       type={rocket.type}
-       img={rocket.image}
-       description={rocket.description}
-     />
+        <Rocket
+          key={rocket.id}
+          id={rocket.id}
+          name={rocket.name}
+          type={rocket.type}
+          img={rocket.image}
+          description={rocket.description}
+        />
       ))}
     </>
   );
