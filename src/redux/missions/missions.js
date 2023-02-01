@@ -43,13 +43,13 @@ const getData = async () => {
 };
 
 export const joinMission = (payload) => ({
-    type: JOIN_MISSION,
-    payload,
+  type: JOIN_MISSION,
+  payload,
 });
 
 export const leaveMission = (payload) => ({
-    type: LEAVE_MISSION,
-    payload,
+  type: LEAVE_MISSION,
+  payload,
 });
 
 export const missionList = () => async (dispatch) => {
