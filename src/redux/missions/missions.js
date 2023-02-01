@@ -5,8 +5,7 @@ const API_URL = 'https://api.spacexdata.com/v3/missions';
 
 const JoinMission = (state, payload) => {
   const newState = state.map((mission) => {
-    if (mission.id !== payload) return mission;
-    console.log(payload);
+    if (mission.mission_id !== payload) return mission;
     return { ...mission, reserved: true };
   });
   return newState;
@@ -14,9 +13,8 @@ const JoinMission = (state, payload) => {
 
 const LeaveMission = (state, payload) => {
   const newState = state.map((mission) => {
-    if (mission.id !== payload) return mission;
-    console.log(payload);
-    return { ...mission, reserved: true };
+    if (mission.mission_id !== payload) return mission;
+    return { ...mission, reserved: false };
   });
   return newState;
 };

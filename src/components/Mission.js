@@ -21,9 +21,9 @@ function Mission(props) {
       {!missionData.reserved
       && <h4 className="stat-case mstat-case">NOT A MEMBER</h4>}
       {missionData.reserved
-      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => leave(missionData.id)}>LEAVE MISSION</button></h4>}
+      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => leave(missionData.mission_id)}>LEAVE MISSION</button></h4>}
       {!missionData.reserved
-      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => join(missionData.id)}>JOIN MISSION</button></h4>}
+      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => join(missionData.mission_id)}>JOIN MISSION</button></h4>}
     </div>
   );
 }
