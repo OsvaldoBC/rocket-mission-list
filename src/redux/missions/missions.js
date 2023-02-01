@@ -3,12 +3,30 @@ const LEAVE_MISSION = 'bookstore/src/redux/books/books/LEAVE_MISSION';
 const MISSION_LIST = 'bookstore/src/redux/books/books/MISSION_LIST';
 const API_URL = 'https://api.spacexdata.com/v3/missions';
 
+const JoinMission = (state, payload) => {
+  const newState = state.map((mission) => {
+    if (mission.id !== payload) return mission;
+    console.log(payload);
+    return { ...mission, reserved: true };
+  });
+  return newState;
+};
+
+const LeaveMission = (state, payload) => {
+  const newState = state.map((mission) => {
+    if (mission.id !== payload) return mission;
+    console.log(payload);
+    return { ...mission, reserved: true };
+  });
+  return newState;
+};
+
 const missionReducer = (state = [], action) => {
   switch (action.type) {
     case JOIN_MISSION:
-      return state;
+      return JoinMission(state, action.payload);
     case LEAVE_MISSION:
-      return state;
+      return LeaveMission(state, action.payload);
     case MISSION_LIST:
       return action.missionList;
     default:
@@ -26,19 +44,15 @@ const getData = async () => {
   }
 };
 
-export const joinMission = (id) => (dispatch) => {
-  dispatch({
+export const joinMission = (payload) => ({
     type: JOIN_MISSION,
-    id,
-  });
-};
+    payload,
+});
 
-export const leaveMission = (id) => (dispatch) => {
-  dispatch({
+export const leaveMission = (payload) => ({
     type: LEAVE_MISSION,
-    id,
-  });
-};
+    payload,
+});
 
 export const missionList = () => async (dispatch) => {
   const missionList = await getData();

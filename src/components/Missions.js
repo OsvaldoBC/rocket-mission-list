@@ -26,6 +26,7 @@ function Missions() {
             key={item.mission_id}
             mission_name={item.mission_name}
             description={item.description}
+            reserved={item.reserved}
           />
         ))
       }
