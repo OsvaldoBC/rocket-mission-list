@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Rockets from './components/RocketsContainer';
 import Missions from './components/Missions';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Rockets />} />
             <Route exact path="/missions" element={<Missions />} />
+            <Route exact path="/profile" element={<Profile />} />
           </Routes>
         </BrowserRouter>
       </header>
