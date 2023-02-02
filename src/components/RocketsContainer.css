@@ -22,4 +22,11 @@
   color: white;
   border: solid #0d6efd;
   border-radius: 5px;
+  padding: 0.4rem;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  border: solid #5a5a5a;
+  color: #5a5a5a;
 }
