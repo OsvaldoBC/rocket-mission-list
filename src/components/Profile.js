@@ -6,7 +6,8 @@ import MyRockets from './MyRockets';
 import './Profile.css';
 
 function Profile() {
-  const listOfMissions = useSelector((state) => state.missions);
+  const missionsList = useSelector((state) => state.missions);
+  const listOfMissions = missionsList.filter((mission) => mission.reserved === true);
   const send = useDispatch();
 
   useEffect(() => {
@@ -36,11 +37,11 @@ function Profile() {
       }
         </div>
       </div>
-      <div>
-        <h2>My Rockets</h2>
-        <p>
+      <div className="rockets-main-conteiner">
+        <h2 className="rockets-container-title">My Rockets</h2>
+        <ul>
           { reservedRockets }
-        </p>
+        </ul>
       </div>
     </div>
   );

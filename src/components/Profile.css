@@ -12,6 +12,7 @@
 
 .missions-container-title {
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .main-missions-container {
@@ -19,6 +20,7 @@
   color: #fff;
   border-radius: 12px;
   padding: 10px;
+  width: 300px;
 }
 
 .mission-intro {
@@ -27,4 +29,32 @@
 
 .mission-title {
   margin-left: 10px;
+}
+
+.rocket-intro{
+  font-weight: 100;
+  font-size: 18px;
+}
+.rocket-title{
+  font-weight: 100;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.rockets-main-conteiner{
+  background-color: #00000080;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.rockets-container-title{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.rockets-items{
+  list-style: none;
 }

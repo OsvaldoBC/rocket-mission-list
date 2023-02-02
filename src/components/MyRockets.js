@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 const MyRockets = ({
   name,
 }) => (
-  <ul>
-    <li>
-      {name}
+  <ul className="rockets-items">
+    <li className="rocket-intro">
+      You reserved rocket:
+      <span className="rocket-title">{name}</span>
     </li>
   </ul>
 );
