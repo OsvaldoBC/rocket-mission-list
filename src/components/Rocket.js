@@ -15,7 +15,7 @@ const Rocket = ({
         <p>
           {' '}
           {reserved && (
-          <span style={{ backgroundColor: '#0d6efd', color: '#fff' }}>Reserved</span>
+            <span style={{ backgroundColor: '#0d6efd', color: '#fff' }}>Reserved</span>
           )}
           {' '}
           {description}
