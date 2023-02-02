@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterAct } from '../redux/missions/missions';
 import ProfileMission from './ProfileMission';
+import MyRockets from './MyRockets';
 import './Profile.css';
 
 function Profile() {
@@ -11,6 +12,12 @@ function Profile() {
   useEffect(() => {
     send(filterAct());
   }, [send]);
+
+  const rockets = useSelector((state) => state.rocket);
+  const reservedRockets = rockets.filter((rocket) => rocket.reserved).map((rocket) => (
+    <MyRockets key={rocket.id} id={rocket.id} name={rocket.name} />
+  ));
+
   return (
     <div className="main-profile-container">
       <div className="main-missions-container">
@@ -31,6 +38,9 @@ function Profile() {
       </div>
       <div>
         <h2>My Rockets</h2>
+        <p>
+          { reservedRockets }
+        </p>
       </div>
     </div>
   );
