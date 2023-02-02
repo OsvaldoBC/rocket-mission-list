@@ -15,16 +15,16 @@ const Rocket = ({
         <p>
           {' '}
           {reserved && (
-            <span style={{ backgroundColor: '#0d6efd', color: '#fff' }}>Reserved</span>
+            <span className="reserved">Reserved</span>
           )}
           {' '}
           {description}
         </p>
         {!reserved && (
-          <button type="button" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>
+          <button className="rocket-btn-inactive" type="button" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button>
         )}
         {reserved && (
-          <button style={{ backgroundColor: '#fff', color: '#5a5a5a' }} type="button" onClick={() => dispatch(cancelRocket(id))}>Cancel Reservation</button>
+          <button className="rocket-btn-active" type="button" onClick={() => dispatch(cancelRocket(id))}>Cancel Reservation</button>
         )}
       </div>
     </div>

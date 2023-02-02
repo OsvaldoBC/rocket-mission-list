@@ -9,7 +9,9 @@ function Missions() {
   const send = useDispatch();
 
   useEffect(() => {
-    send(missionList());
+    if (!listOfMissions.length) {
+      send(missionList());
+    }
   }, [send]);
   return (
     <div className="missions-container">
