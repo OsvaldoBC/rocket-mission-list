@@ -14,7 +14,7 @@ const RocketsContainer = () => {
     // eslint-disable-next-line
   }, []);
   return (
-    <>
+    <div className="rocket-item-container">
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
@@ -26,7 +26,7 @@ const RocketsContainer = () => {
           reserved={rocket.reserved}
         />
       ))}
-    </>
+    </div>
   );
 };
 

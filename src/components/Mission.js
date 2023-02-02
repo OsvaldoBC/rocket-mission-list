@@ -17,13 +17,13 @@ function Mission(props) {
       <h4 className="name-case mname-case">{missionData.mission_name}</h4>
       <p className="desc-case mdesc-case">{missionData.description}</p>
       {missionData.reserved
-      && <h4 className="stat-case mstat-case">ACTIVE MEMBER</h4>}
+      && <div className="stat-case mstat-case"><h4 className="text-active">ACTIVE MEMBER</h4></div>}
       {!missionData.reserved
-      && <h4 className="stat-case mstat-case">NOT A MEMBER</h4>}
+      && <div className="stat-case mstat-case"><h4 className="text">NOT A MEMBER</h4></div>}
       {missionData.reserved
-      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => leave(missionData.mission_id)}>LEAVE MISSION</button></h4>}
+      && <h4 className="btn-case mbtn-case"><button className="btn-active" type="button" onClick={() => leave(missionData.mission_id)}>LEAVE MISSION</button></h4>}
       {!missionData.reserved
-      && <h4 className="btn-case mbtn-case"><button type="button" onClick={() => join(missionData.mission_id)}>JOIN MISSION</button></h4>}
+      && <h4 className="btn-case mbtn-case"><button className="btn-inactive" type="button" onClick={() => join(missionData.mission_id)}>JOIN MISSION</button></h4>}
     </div>
   );
 }

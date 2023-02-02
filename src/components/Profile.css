@@ -1,4 +1,30 @@
 .main-profile-container {
   display: flex;
   justify-content: space-evenly;
+  background-color: #a13b6d80;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.missions-container-title{
+  margin-bottom: 15px;
+}
+
+.main-missions-container{
+  background-color: #00000080;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.mission-intro{
+  font-weight: 100;
+}
+
+.mission-title{
+  margin-left: 10px;
 }
