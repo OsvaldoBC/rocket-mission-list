@@ -10,21 +10,21 @@
   padding-bottom: 20px;
 }
 
-.missions-container-title{
+.missions-container-title {
   margin-bottom: 15px;
 }
 
-.main-missions-container{
+.main-missions-container {
   background-color: #00000080;
   color: #fff;
   border-radius: 12px;
   padding: 10px;
 }
 
-.mission-intro{
+.mission-intro {
   font-weight: 100;
 }
 
-.mission-title{
+.mission-title {
   margin-left: 10px;
 }
