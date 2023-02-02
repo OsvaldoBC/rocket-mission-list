@@ -31,17 +31,18 @@
   margin-left: 10px;
 }
 
-.rocket-intro{
+.rocket-intro {
   font-weight: 100;
   font-size: 18px;
 }
-.rocket-title{
+
+.rocket-title {
   font-weight: 100;
   font-size: 18px;
   margin-left: 10px;
 }
 
-.rockets-main-conteiner{
+.rockets-main-conteiner {
   background-color: #00000080;
   color: #fff;
   border-radius: 12px;
@@ -50,11 +51,11 @@
   text-align: center;
 }
 
-.rockets-container-title{
+.rockets-container-title {
   margin-bottom: 15px;
   text-align: center;
 }
 
-.rockets-items{
+.rockets-items {
   list-style: none;
 }
