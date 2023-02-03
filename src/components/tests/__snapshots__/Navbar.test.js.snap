@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checking page deployment Navbar component matches snapshot 1`] = `
+<nav
+  className="navbar-main-container"
+>
+  <div
+    className="logo-container"
+  >
+    <img
+      alt="Logo"
+      className="logo-navbar"
+      src="white-planet.png"
+    />
+    <h1>
+      Rocket Mission
+    </h1>
+  </div>
+  <div>
+    <ul
+      className="nav-items"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className="inactive"
+          href="/Missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          className="inactive"
+          href="/Profile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

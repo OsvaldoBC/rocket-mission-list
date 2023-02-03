@@ -1,0 +1,68 @@
+.rocket {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.rocket img {
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.rocket-details {
+  background-color: #00000080;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
+.rocket-details h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rocket-details p {
+  padding-bottom: 10px;
+  padding-right: 40px;
+  line-height: 25px;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  border: solid #5a5a5a;
+  color: #5a5a5a;
+}
+
+.reserved {
+  background-color: #a13b6d;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 100;
+}
+
+.rocket-btn-inactive {
+  background-color: #a13b6d;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rocket-btn-active {
+  background-color: #9f8db5;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
