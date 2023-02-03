@@ -14,15 +14,20 @@ Object {
         <p
           class="desc-case mdesc-case"
         />
-        <h4
+        <div
           class="stat-case mstat-case"
         >
-          NOT A MEMBER
-        </h4>
+          <h4
+            class="text"
+          >
+            NOT A MEMBER
+          </h4>
+        </div>
         <h4
           class="btn-case mbtn-case"
         >
           <button
+            class="btn-inactive"
             type="button"
           >
             JOIN MISSION
@@ -41,15 +46,20 @@ Object {
       <p
         class="desc-case mdesc-case"
       />
-      <h4
+      <div
         class="stat-case mstat-case"
       >
-        NOT A MEMBER
-      </h4>
+        <h4
+          class="text"
+        >
+          NOT A MEMBER
+        </h4>
+      </div>
       <h4
         class="btn-case mbtn-case"
       >
         <button
+          class="btn-inactive"
           type="button"
         >
           JOIN MISSION
