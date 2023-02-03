@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing page deployment Mission components matches snapshot 1`] = `
+exports[`Testing page deployment ProfileMission components matches snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -8,9 +8,13 @@ Object {
       <div
         class="mission-profile-list-container"
       >
-        <h3>
-          Estas unido a la mision:
-          <span />
+        <h3
+          class="mission-intro"
+        >
+          You joined mission:
+          <span
+            class="mission-title"
+          />
         </h3>
       </div>
     </div>
@@ -19,9 +23,13 @@ Object {
     <div
       class="mission-profile-list-container"
     >
-      <h3>
-        Estas unido a la mision:
-        <span />
+      <h3
+        class="mission-intro"
+      >
+        You joined mission:
+        <span
+          class="mission-title"
+        />
       </h3>
     </div>
   </div>,

@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 import store from '../../redux/configureStore';
 
 describe('Testing page deployment', () => {
-  test('Mission components matches snapshot', () => {
+  test('ProfileMission components matches snapshot', () => {
     const tree = render(
       <Provider store={store}>
         <ProfileMission />
