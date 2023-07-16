@@ -32,7 +32,7 @@
 
 # 📖 [Rocket-Mission-List] <a name="about-project"></a>
 
-**[Rocket-Mission-list]** is a React project, with the real live data from the SpaceX API.  We are going to  build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**[Rocket-Mission-list]** is a React project, with real live data from the SpaceX API.  Is a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
